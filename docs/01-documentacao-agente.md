@@ -26,7 +26,7 @@ Utilizando processamento de linguagem natural simples e um motor de regras, o ag
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-LucyAcessível IA
+**LucyAcessível IA**
 (Assistente Financeiro Inclusivo)
 
 
@@ -43,39 +43,69 @@ O agente possui uma personalidade educativa, empática, priorizando clareza, pac
 - Respeitoso
 - Educacional
 
+
 ### Exemplos de Linguagem
 
-- Saudação: "Olá! Estou aqui para te ajudar a entender produtos financeiros de forma simples e acessível."
-- Confirmação: "Entendi sua dúvida! Vou te explicar isso agora."
-- Erro/Limitação: "Ainda não tenho essa informação, mas posso te ajudar com explicações sobre contas ou crédito."
+**Saudação:** "Olá! Estou aqui para te ajudar a entender produtos financeiros de forma simples e acessível."  
+**Confirmação:** "Entendi sua dúvida! Vou te explicar isso agora."  
+
+**Erro/Limitação:** "Ainda não tenho essa informação, mas posso te ajudar com explicações sobre contas ou crédito."
 
 ---
 
 ## Arquitetura
 
-### Diagrama
+O agente **LucyAcessível IA** foi desenvolvido com foco em **acessibilidade, segurança e controle das respostas**.  
 
+Ele utiliza um **motor de regras simples**, consultando uma **base de conhecimento estruturada**, para gerar respostas educativas, claras e confiáveis.  
+
+O diagrama abaixo compara o fluxo do projeto atual (rule-based) com uma possível implementação usando IA generativa, mostrando diferenças em leveza, controle e risco de alucinação.
+
+
+### Diagrama
+<!-- Diagrama comparativo: Rule-Based vs IA Generativa -->
 ```mermaid
 flowchart TD
-    A[Usuário] -->|Mensagem de Texto| B[Interface Web Acessível]
-    B --> C[NLP Simples]
-    C --> D[Motor de Regras]
-    D --> E[Base de Conhecimento]
-    E --> D
-    D --> F[Resposta Acessível]
-    F --> B
+subgraph RULE_BASED [LucyAcessível IA - Rule-Based]
+    A1[Usuário envia pergunta] --> B1[Motor de regras identifica intenção]
+        B1 --> C1[Consulta base de conhecimento]
+        C1 --> D1[Constrói resposta educativa]
+        D1 --> E1[Envia resposta ao usuário]
+    end
+
+subgraph LLM [LucyAcessível IA - IA Generativa]
+    A2[Usuário envia pergunta] --> B2[IA processa texto livremente]
+        B2 --> C2[Modelo gera resposta com base no aprendizado]
+        C2 --> D2[Resposta pode precisar de verificação]
+        D2 --> E2[Envia resposta ao usuário]
+    end
+
+style RULE_BASED fill:#D6F5D6,stroke:#4CAF50,stroke-width:2px
+style LLM fill:#F5D6D6,stroke:#F44336,stroke-width:2px
+
+    F[Observações] --> RULE_BASED
+    F --> LLM
+    F[Observações: Rule-based = leve, controlado, seguro | LLM = fluido, mas pesado, risco de alucinação]
+
 
 ```
+
+### Legenda das cores
+
+- Verde (Rule-Based) → fluxo leve, totalmente controlado e seguro
+- Vermelho (IA Generativa) → fluxo fluido e natural, mas pesado, com risco de respostas fora do controle
+
 
 ### Componentes
 
 | Componente   |   Descrição  | 
 |--------------|--------------| 
-| Interface | Aplicação web desenvolvida em Streamlit, com foco em acessibilidade | 
-| NLP Simples | Identificação de intenções por palavras-chave e normalização de texto | 
-| Motor de Regras | Define respostas com base na intenção detectada | 
-| Base de Conhecimento | Arquivos JSON/CSV com dados sobre produtos financeiros | 
-| Validação | Evita respostas fora da base de conhecimento |
+| Interface | Aplicação web em Streamlit, com foco em acessibilidade |
+| NLP Simples | Identifica intenções usando palavras-chave e normaliza o texto do usuário |
+| Motor de Regras | Analisa intenção do usuário e consulta a base de conhecimento para gerar respostas educativas |
+| Base de Conhecimento | Arquivos JSON/CSV com dados sobre produtos financeiros, termos e perguntas frequentes |
+| Validação | Garante que respostas permaneçam dentro da base de conhecimento, mantendo segurança |
+
 
 ---
 
@@ -90,6 +120,7 @@ flowchart TD
 - [x] Simulações são educativas e demonstrativas
 - [x] Linguagem clara e não persuasiva
 
+
 ### Limitações Declaradas
 
 O agente não:
@@ -99,6 +130,7 @@ O agente não:
 - Faz recomendações de investimento
 - Substitui um consultor financeiro humano
 - Utiliza modelos de IA proprietários ou APIs pagas.
+
 
 ### Considerações de Acessibilidade
 
@@ -112,14 +144,21 @@ O agente não:
 
 ### Contexto Educacional
 
-> Este projeto foi desenvolvido como parte do Bootcamp DIO + Bradesco, com foco em consolidar conhecimentos em:
+Parte do Bootcamp DIO + Bradesco, com foco em:
 
-- Inteligência Artificial,
-- Python,
-- Dados,
-- UX e Acessibilidade,
-- Ética em IA.
+- Inteligência Artificial
+- Python
+- Dados
+- UX e Acessibilidade
+- Ética em IA
 
-### Observação Final
 
-O LucyAcessível IA demonstra que é possível construir soluções inteligentes, éticas e inclusivas utilizando tecnologias abertas, gratuitas e explicáveis, reforçando o compromisso com inovação responsável no setor financeiro.
+### Observação Final 
+
+
+- O fluxo **rule-based** garante respostas determinísticas, educativas e seguras, ideal para iniciantes ou usuários com necessidades de acessibilidade
+- O fluxo **IA generativa** é mais natural, porém exige mais recursos e apresenta risco de alucinação; por isso, não foi adotado
+- Essa abordagem facilita a explicação do funcionamento do agente no pitch de 3 minutos
+- Mantém transparência e reprodutibilidade no GitHub
+
+---

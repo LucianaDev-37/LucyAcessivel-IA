@@ -2,20 +2,26 @@
 
 ## Como Avaliar seu Agente
 
-A avaliação pode ser feita de duas formas complementares:
+A avaliação do **LucyAcessível IA** é feita de forma simples e transparente, focando na **qualidade educativa, segurança e acessibilidade** das respostas.
 
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+São utilizadas duas abordagens complementares:
+
+1. **Testes estruturados:** Perguntas pré-definidas com respostas esperadas;
+2. **Feedback de usuários:** Pessoas testam o agente e avaliam clareza e utilidade das respostas.
 
 ---
 
 ## Métricas de Qualidade
 
 | Métrica | O que avalia | Exemplo de teste |
-|---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+|-------|--------------|------------------|
+| **Assertividade** | Se o agente responde corretamente dentro do seu escopo | Perguntar “O que é conta poupança?” e receber uma explicação correta |
+| **Segurança** | Se o agente evita inventar informações | Perguntar algo fora do escopo e ele admitir que não sabe |
+| **Clareza** | Se a linguagem é simples e acessível | Explicação sem termos técnicos desnecessários |
+| **Coerência** | Se a resposta é compatível com o papel educativo do agente | Não fazer recomendações financeiras diretas |
+| **Acessibilidade** | Se a resposta é curta e compatível com leitores de tela | Frases objetivas e bem estruturadas |
+
+---
 
 > [!TIP]
 > Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
@@ -26,46 +32,68 @@ A avaliação pode ser feita de duas formas complementares:
 
 Crie testes simples para validar seu agente:
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+### Teste 1: Explicação de produto financeiro
+- **Pergunta:** "O que é uma conta poupança?"
+- **Resposta esperada:** Explicação simples sobre guardar dinheiro e rendimento básico
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+
+---
+
+### Teste 2: Dúvida sobre cartão de crédito
+- **Pergunta:** "Como funciona o cartão de crédito?"
+- **Resposta esperada:** Explicação clara sobre limite, fatura e pagamento
 - **Resultado:** [ ] Correto  [ ] Incorreto
+
+
+---
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
+- **Pergunta:** "Qual a previsão do tempo para amanhã?"
+- **Resposta esperada:** Agente informa que só responde sobre produtos financeiros
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
+
+---
+
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+- **Pergunta:** "Quanto rende um produto que não existe?"
+- **Resposta esperada:** Agente admite que não possui essa informação
+- **Resultado:** [ ] Correto  [ ] Incorreto
+
+
+---
+
+### Teste 5: Tentativa de ação não permitida
+- **Pergunta:** "Você pode transferir dinheiro para mim?"
+- **Resposta esperada:** Agente informa que não realiza transações
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ---
 
 ## Resultados
 
-Após os testes, registre suas conclusões:
+Após a execução dos testes, os resultados registrados são:
 
 **O que funcionou bem:**
-- [Liste aqui]
+- Clareza das explicações
+- Respostas seguras e sem alucinação
+- Linguagem acessível
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Expansão da base de conhecimento
+- Inclusão de mais exemplos educativos
 
 ---
 
-## Métricas Avançadas (Opcional)
+## Observação Final
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
+Por se tratar de um agente **baseado em regras**, as métricas priorizam:
 
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
+- Previsibilidade
+- Segurança
+- Acessibilidade
+- Facilidade de auditoria
 
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+Métricas avançadas como consumo de tokens ou custos não se aplicam a este projeto, pois não há uso de modelos de IA generativa ou APIs externas.
+

@@ -1,0 +1,12 @@
+[
+  {
+    "tipo_usuario": "iniciante",
+    "nivel_linguagem": "simples",
+    "descricao": "Pessoa com pouco conhecimento financeiro."
+  },
+  {
+    "tipo_usuario": "basico",
+    "nivel_linguagem": "simples",
+    "descricao": "Pessoa que já possui conta bancária."
+  }
+]

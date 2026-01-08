@@ -6,34 +6,50 @@
 ## Roteiro Sugerido
 
 ### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
 
-[Sua descrição aqui]
+Muitas pessoas têm dificuldade em entender produtos financeiros básicos, como conta corrente, cartão de crédito e poupança.  
+Essas dificuldades aumentam quando a linguagem usada pelos bancos é técnica, extensa e pouco acessível.
+
+Pessoas com deficiência visual, cognitiva ou com pouco letramento financeiro enfrentam ainda mais barreiras para acessar informações claras, seguras e inclusivas no ambiente digital.
+
+---
 
 ### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
 
-[Sua descrição aqui]
+O **LucyAcessível IA** é um assistente financeiro educativo e inclusivo, criado para explicar produtos bancários de forma simples, clara e acessível.
 
+Ele utiliza um **motor de regras** e uma **base de conhecimento estruturada**, garantindo respostas controladas, seguras e sem risco de alucinação.
+
+O agente não realiza transações, não acessa dados reais de clientes e não faz recomendações financeiras sem contexto.  
+Seu foco é **educação financeira**, **acessibilidade digital** e **confiança nas respostas**.
+
+---
 ### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
 
-[Descreva o que será mostrado]
+- O usuário perguntando o que é uma conta poupança;
+- O agente respondendo com linguagem simples e acessível;
+- Um exemplo de dúvida sobre cartão de crédito;
+- Uma pergunta fora do escopo, onde o agente admite a limitação e redireciona corretamente.
 
+A demonstração evidencia o controle das respostas e o foco educacional do agente.
+
+---
 ### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-[Sua descrição aqui]
+O diferencial do LucyAcessível IA está na **simplicidade responsável**.  
+Ao invés de priorizar respostas complexas, o projeto prioriza **clareza**, **acessibilidade** e **segurança**.
+
+O impacto está em tornar a educação financeira mais inclusiva, reduzindo barreiras de acesso à informação e promovendo autonomia para pessoas iniciantes ou com necessidades de acessibilidade.
 
 ---
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
