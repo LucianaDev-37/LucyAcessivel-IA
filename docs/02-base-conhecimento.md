@@ -5,18 +5,15 @@
 O agente LucyAcessível IA utiliza uma base de conhecimento educacional e acessível, composta por arquivos JSON e CSV armazenados na pasta `data`.
 Esses dados contêm explicações simples sobre produtos financeiros, perguntas frequentes e termos básicos, sem o uso de dados pessoais ou informações sensíveis.
 
-
-|      Arquivo   | Formato | Utilização no Agente |
-|----------------|---------|----------------------|
-| `glossario_financeiro.csv` | CSV     | Explicar termos financeiros em linguagem clara e acessível|
+| Arquivo                    | Formato | Utilização no Agente                                               |
+| -------------------------- | ------- | ------------------------------------------------------------------ |
+| `glossario_financeiro.csv` | CSV     | Explicar termos financeiros em linguagem clara e acessível         |
 | `perfis_usuario.json`      | JSON    | Ajustar linguagem e nível de explicação conforme o tipo de usuário |
-| `produtos_financeiros.json`| JSON    | Explicar produtos financeiros básicos de forma simples |
-| `perguntas_frequentes.csv` | CSV     | Base principal do motor de regras para responder dúvidas comuns|
-
+| `produtos_financeiros.json`| JSON    | Explicar produtos financeiros básicos de forma simples             |
+| `perguntas_frequentes.csv` | CSV     | Base principal do motor de regras para responder dúvidas comuns    |
 
 > [!TIP]
 Os dados utilizados são mockados e educativos, inspirados em conteúdos públicos de educação financeira, garantindo ética, segurança e acessibilidade.
-
 
 ---
 
@@ -29,7 +26,6 @@ Os dados foram criados e adaptados manualmente com foco em acessibilidade e incl
 - Conteúdo educativo e não persuasivo
 - Ausência de dados sensíveis ou pessoais
 - Estrutura pensada para fácil expansão
-
 
 ---
 
@@ -57,13 +53,11 @@ O agente consulta a base de conhecimento por meio de um motor de regras, que ide
 
 Essa estratégia reduz riscos de alucinação e mantém o controle total das respostas.
 
-
 ---
 
 ## Exemplo de Contexto Montado
 
-```
-
+```markdown
 Tipo de usuário: Iniciante
 Nível de linguagem: Simples
 
@@ -78,5 +72,3 @@ Resposta da Lucy:
 "Conta poupança é uma forma simples de guardar dinheiro.
 Ela rende um pouco, seguindo regras definidas pelo Banco Central, e é considerada uma opção básica e segura."
 
-...
-```

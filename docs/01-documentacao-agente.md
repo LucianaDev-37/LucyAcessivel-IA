@@ -6,12 +6,10 @@
 
 Muitas pessoas têm dificuldade em compreender produtos financeiros como contas bancárias e crédito, devido ao uso de linguagem técnica, excesso de informações e falta de acessibilidade. Pessoas com deficiência visual, auditiva, motora ou cognitiva enfrentam ainda mais barreiras no acesso a informações financeiras claras, seguras e inclusivas.
 
-
 ### Solução
 
 O agente atua como um assistente financeiro acessível, capaz de explicar produtos bancários de forma clara e simples.
 Utilizando processamento de linguagem natural simples e um motor de regras, o agente identifica a intenção do usuário, consulta uma base de conhecimento estruturada e retorna respostas educativas, seguras e adaptadas à acessibilidade, sem depender de APIs pagas ou modelos proprietários.
-
 
 ### Público-Alvo
 
@@ -20,20 +18,18 @@ Utilizando processamento de linguagem natural simples e um motor de regras, o ag
 - Pessoas com deficiência (visual, auditiva, motora ou cognitiva).
 - Instituições interessadas em soluções financeiras inclusivas.
 
-
 ---
 
 ## Persona e Tom de Voz
 
-### Nome do Agente
+### Nome-do-Agente
+
 **LucyAcessível IA**
 (Assistente Financeiro Inclusivo)
-
 
 ### Personalidade
 
 O agente possui uma personalidade educativa, empática, priorizando clareza, paciência e inclusão. Ele evita termos técnicos desnecessários e se adapta ao nível de entendimento do usuário.
-
 
 ### Tom de Comunicação
 
@@ -42,7 +38,6 @@ O agente possui uma personalidade educativa, empática, priorizando clareza, pac
 - Não técnico
 - Respeitoso
 - Educacional
-
 
 ### Exemplos de Linguagem
 
@@ -60,7 +55,6 @@ O agente **LucyAcessível IA** foi desenvolvido com foco em **acessibilidade, se
 Ele utiliza um **motor de regras simples**, consultando uma **base de conhecimento estruturada**, para gerar respostas educativas, claras e confiáveis.  
 
 O diagrama abaixo compara o fluxo do projeto atual (rule-based) com uma possível implementação usando IA generativa, mostrando diferenças em leveza, controle e risco de alucinação.
-
 
 ### Diagrama
 <!-- Diagrama comparativo: Rule-Based vs IA Generativa -->
@@ -95,17 +89,16 @@ style LLM fill:#F5D6D6,stroke:#F44336,stroke-width:2px
 - Verde (Rule-Based) → fluxo leve, totalmente controlado e seguro
 - Vermelho (IA Generativa) → fluxo fluido e natural, mas pesado, com risco de respostas fora do controle
 
-
 ### Componentes
 
-| Componente   |   Descrição  | 
-|--------------|--------------| 
+| Componente   |   Descrição  |
+|--------------|--------------|
+
 | Interface | Aplicação web em Streamlit, com foco em acessibilidade |
 | NLP Simples | Identifica intenções usando palavras-chave e normaliza o texto do usuário |
 | Motor de Regras | Analisa intenção do usuário e consulta a base de conhecimento para gerar respostas educativas |
 | Base de Conhecimento | Arquivos JSON/CSV com dados sobre produtos financeiros, termos e perguntas frequentes |
 | Validação | Garante que respostas permaneçam dentro da base de conhecimento, mantendo segurança |
-
 
 ---
 
@@ -120,7 +113,6 @@ style LLM fill:#F5D6D6,stroke:#F44336,stroke-width:2px
 - [x] Simulações são educativas e demonstrativas
 - [x] Linguagem clara e não persuasiva
 
-
 ### Limitações Declaradas
 
 O agente não:
@@ -130,7 +122,6 @@ O agente não:
 - Faz recomendações de investimento
 - Substitui um consultor financeiro humano
 - Utiliza modelos de IA proprietários ou APIs pagas.
-
 
 ### Considerações de Acessibilidade
 
@@ -152,9 +143,7 @@ Parte do Bootcamp DIO + Bradesco, com foco em:
 - UX e Acessibilidade
 - Ética em IA
 
-
-### Observação Final 
-
+### Observação Final
 
 - O fluxo **rule-based** garante respostas determinísticas, educativas e seguras, ideal para iniciantes ou usuários com necessidades de acessibilidade
 - O fluxo **IA generativa** é mais natural, porém exige mais recursos e apresenta risco de alucinação; por isso, não foi adotado
