@@ -53,7 +53,7 @@ A aplicação foi desenvolvida com:
 
 ### 1️⃣ Acesse o Repositório
 
-Você pode acessar a página do projeto aqui: 
+Você pode acessar a página do projeto aqui:
 
 [https://github.com/LucianaDev-37/LucyAcessivel-IA](https://github.com/LucianaDev-37/LucyAcessivel-IA)
 

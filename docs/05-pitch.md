@@ -1,9 +1,9 @@
 # Pitch (3 minutos)
 
-### 1. O Problema (30 segundos)
+## 1. O Problema (30 segundos)
 
 Muitas pessoas têm dificuldade em entender produtos financeiros básicos, como conta corrente, cartão de crédito e poupança.  
-Essas dificuldades aumentam quando a linguagem usada pelos bancos é técnica, extensa e pouco acessível.
+Essas dificuldades aumentam quando a linguagem usada pelos bancos é técnica e extensa.
 
 ---
 
