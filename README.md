@@ -84,26 +84,26 @@ Esses registros comprovam o funcionamento do protótipo.
 
 ---
 📂 Estrutura do Repositório
-
-📁 lucyacessivel-ia/
+lucyacessivel-ia/
 │
-├── 📄 README.md              # Documentação principal
+├── README.md
 │
-├── 📁 src/                   # Código da aplicação
-│   ├── app.py                # Aplicação Streamlit
-│   └── requirements.txt      # Dependências
+├── src/
+│   ├── app.py
+│   └── requirements.txt
 │
-├── 📁 assets/                # Imagens e evidências visuais
-│   └── README.md
+├── assets/
+│   └── imagens/
 │
-├── 📁 docs/                  # Documentação conceitual
+├── docs/
 │   ├── 01-documentacao-agente.md
 │   ├── 02-base-conhecimento.md
 │   ├── 03-prompts.md
 │   ├── 04-metricas.md
 │   └── 05-pitch.md
 │
-└── 📁 data/                  # Dados mockados (uso futuro)
+└── data/
+    └── README.md
 
 ---
 
