@@ -56,7 +56,7 @@ A aplicação foi desenvolvida com:
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/LucianaDev-37/LucyAcessivel-IA
+git clone [LucyAcessivel-IA](https://github.com/LucianaDev-37/LucyAcessivel-IA)
 
 
 ```
