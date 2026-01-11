@@ -51,13 +51,16 @@ A aplicação foi desenvolvida com:
 
 ---
 
-## ▶️ Como Rodar o Projeto
+### 1️⃣ Acesse o Repositório
 
-### 1️⃣ Clone o repositório
+Você pode acessar a página do projeto aqui: 
+
+[https://github.com/LucianaDev-37/LucyAcessivel-IA](https://github.com/LucianaDev-37/LucyAcessivel-IA)
+
+Ou clonar via terminal:
 
 ```bash
 git clone https://github.com/LucianaDev-37/LucyAcessivel-IA
-
 
 ```
 
