@@ -67,8 +67,8 @@ O impacto está em tornar a educação financeira mais inclusiva, reduzindo barr
 
 ---
 
-## Link do Vídeo
+## 🎥 Pitch do Projeto
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
+Vídeo de apresentação do LucyAcessível IA:
 
-[Link do vídeo]
+[Assistir ao pitch](https://drive.google.com/file/d/1C7HiEo7p31yN0hGcOP00mVJgxIdnn1aS/view?usp=sharing)
