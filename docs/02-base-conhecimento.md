@@ -10,7 +10,7 @@ Essa abordagem foi escolhida para:
 
 - Garantir previsibilidade das respostas  
 - Evitar alucinações  
-- Facilitar auditoria e explicação técnica  
+- Facilitar a explicação técnica  
 - Manter o projeto leve e acessível  
 - Tornar o funcionamento compreensível para iniciantes  
 
@@ -32,9 +32,8 @@ Cada conjunto de palavras-chave está associado a uma resposta educativa e acess
 Atualmente, o agente é capaz de responder perguntas relacionadas aos seguintes temas:
 
 - Conta corrente / conta bancária  
-- Poupança / economia de dinheiro  
-- Cartão de crédito / limite  
-- Empréstimos e financiamentos  
+- Poupança/ Cartão de crédito
+- Empréstimos
 
 As respostas são formuladas em linguagem simples, com foco educativo e acessível.
 
@@ -74,6 +73,9 @@ def responder(pergunta):
         "Ainda não tenho informações sobre isso. "
         "Posso ajudar com conta corrente, poupança, cartão de crédito ou empréstimo."
     )
+```
+
+---
 
 ## Limitações Atuais
 
@@ -107,5 +109,3 @@ A base de conhecimento do agente foi projetada com foco em **clareza, segurança
 - Demonstrações acadêmicas  
 - Projetos educacionais  
 - Avaliação técnica inicial por professores ou recrutadores  
-
-
